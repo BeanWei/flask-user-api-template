@@ -1,0 +1,154 @@
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 21:51:00] "POST /api/v1.0/signin HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 21:51:20] "GET /api/v1.0/token HTTP/1.1" 401 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:12:24] "GET /api/v1.0/token HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:14:10] "GET /api/v1.0/token HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:15:49] "GET /api/v1.0/resource HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:16:14] "GET /api/v1.0/resource HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:20:54] "POST /api/v1.0/login HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:21:23] "POST /api/v1.0/login HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:42:54] "GET /api/v1.0/resource HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:52:35] "OPTIONS /api/login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:52:38] "OPTIONS /api/login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:52:42] "OPTIONS /api/login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:53:18] "OPTIONS /api/login HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:55:17] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 22:55:17] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:06:29] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:06:29] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:11:20] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:11:20] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:16:37] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:16:37] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:16:53] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:16:53] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:17:15] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:17:15] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:17:48] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:17:48] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:21:54] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:21:54] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:22:26] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:22:26] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:28:07] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:28:07] "GET /api/v1.0/login HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:28:50] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:28:50] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:34:45] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:34:45] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:37:46] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:37:46] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:39:03] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [20/Apr/2018 23:39:03] "GET /api/v1.0/login HTTP/1.1" 401 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:05:17] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:05:17] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:06:29] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:06:29] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:12:24] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:12:24] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:16:35] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:16:35] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:16:46] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:16:46] "GET /api/v1.0/login HTTP/1.1" 405 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:21:00] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [21/Apr/2018 00:21:00] "GET /api/v1.0/login HTTP/1.1" 401 -
