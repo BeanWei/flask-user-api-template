@@ -14,24 +14,23 @@ def signin():
     '''用户注册接口
     :return 返回注册信息{'re_code': '0', 'msg': '注册成功'}
     '''
-    json_dict = request.json
-    nickname = json_dict.get('nickname')
-    email = json_dict.get('email')
-    password = json_dict.get('password')
-    mailcode_client = json_dict.get('mailcode')
+    nickname =request.values.get('nickname')
+    email =request.values.get('email')
+    password =request.values.get('password')
+    mailcode_client =request.values.get('mailcode')
 
     if not all([email, nickname, password, mailcode_client]):
         return jsonify(re_code=RET.PARAMERR, msg='参数不完整')
 
     #从Redis中获取此邮箱对应的验证码,与前端传来的数据校验
     try:
-        mailcode_server = redis_conn.get('EMAILCODE:'+ email)
+        mailcode_server = redis_conn.get('EMAILCODE:'+ email).decode()
     except Exception as e:
         current_app.logger.debug(e)
         return jsonify(re_code=RET.DBERR, msg='查询邮箱验证码失败')
     if mailcode_server != mailcode_client:
+        current_app.logger.debug(mailcode_server)
         return jsonify(re_code=RET.PARAMERR, msg='邮箱验证码错误')
-    
     user = User()
     user.email = email
     user.nickname = nickname

@@ -32,10 +32,10 @@ class BaseConfig:
     MAIL_PORT = 465               # 端口
     MAIL_USE_SSL = True           # 重要，qq邮箱需要使用SSL
     MAIL_USE_TLS = False          # 不需要使用TLS
-    MAIL_USERNAME = 'xxx@qq.com'  # 填邮箱
-    MAIL_PASSWORD = 'xxxxxx'      # 填授权码
-    FLASK_MAIL_SENDER = 'xxx@qq.com>'   #邮件发送方
-    FLASK_MAIL_SUBJECT_PREFIX = '[产品名称]'     #邮件标题
+    MAIL_USERNAME = '157318439@qq.com'  # 填邮箱
+    MAIL_PASSWORD = 'xttvnyuzklhqbjeg'      # 填授权码
+    FLASK_MAIL_SENDER = '皮皮虾！我们走！<13114469013@qq.com>'   #邮件发送方
+    FLASK_MAIL_SUBJECT_PREFIX = '[皮皮虾！我们走]'     #邮件标题
     #MAIL_DEFAULT_SENDER = 'xxx@qq.com'  # 填邮箱，默认发送者
 
 class TestingConfig(BaseConfig):
