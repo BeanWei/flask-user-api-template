@@ -29,9 +29,9 @@
                         </Input>
                     </FormItem>
                     <FormItem prop="captcha">
-                        <Input type="text" v-model="formInline.captcha" placeholder="邮箱收到的验证码"  size="large" @on-enter="handleSubmit('formInline', formInline)">                          
+                        <Input type="text" v-model="formInline.mailcode" placeholder="邮箱收到的验证码"  size="large" @on-enter="handleSubmit('formInline', formInline)">                          
                             <Icon slot="prepend" type="paper-airplane"></Icon>
-                            <Button slot="append">发送验证码</Button>
+                            <Button slot="append" @click="getMailcode()">发送验证码</Button>
                         </Input>
                     </FormItem>
                     <FormItem>
@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import { requestSignin } from '../../api/api'
+import { requestSignin, requestMailcode } from '../../api/api'
 export default {
     name: 'signin',
     data () {
@@ -90,7 +90,7 @@ export default {
         email: '',
         password: '',
         repassword: '',
-        captcha: ''
+        mailcode: ''
       },
       ruleInline: {
         nickname: [
@@ -106,7 +106,7 @@ export default {
         repassword: [
         { validator: validateCheckPwd, trigger: 'blur' }
         ],
-        captcha: [
+        mailcode: [
         { required: true, message: '请输入验证码', trigger: 'blur' }
         ]       
       },
@@ -120,7 +120,7 @@ export default {
   methods: {
     handleSubmit(name, form) {
         this.$refs[name].validate((valid) => {
-            if (valid) {
+            if (valid && this.formInline.mailcode) {
                 var signinParams = {
                     nickname: form.nickname,
                     email: form.email,
@@ -137,9 +137,28 @@ export default {
                     this.$Message.error(error.status)
                 })
             } else {
-                this.$Message.error('表单验证失败!');
+                this.$Message.error('信息不完整');
             }
         })
+    },
+    getMailcode() {
+        if (this.formInline.nickname && this.formInline.email && this.formInline.password && this.formInline.repassword) {
+            var mailcodeParams = {
+                nickname: this.formInline.nickname,
+                email: this.formInline.email
+            }
+            requestMailcode(mailcodeParams).then(response => {
+                if (response.re_code === "0" ) {
+                    this.$Message.success("验证码已发送")
+                } else {
+                    this.$Message.error(response.msg)
+                }  
+            }).catch(error => {
+                this.$Message.error(error.status)
+            })
+        } else {
+            this.$Message.error('信息不完整');
+        }
     }
 }
 }

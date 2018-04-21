@@ -19,3 +19,12 @@ export const requestSignin = params => {
     })
     .then(res => res.data)
 }
+
+export const requestMailcode = params => {
+    return axios ({
+        method: 'POST',
+        url: `${baseURL}/mailcode`,
+        auth: params
+    })
+    .then(res => res.data)
+}
