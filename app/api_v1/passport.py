@@ -2,23 +2,36 @@ from flask import g, current_app, jsonify, request,make_response
 from flask_httpauth import HTTPBasicAuth
 auth = HTTPBasicAuth()
 
-from app import db
+from app import db, redis_conn
 from app.api_v1 import api
 from app.models import User
 from app.utils.response_code import RET
+from app.utils.email import send_mail
 
 
 @api.route('/signin', methods=['POST'])
 def signin():
     '''用户注册接口
-    TODO: 添加图片验证
     :return 返回注册信息{'re_code': '0', 'msg': '注册成功'}
     '''
-    email = request.values.get('email')
-    nickname = request.values.get('nickname')
-    password = request.values.get('password')
-    if not all([email, nickname, password]):
+    json_dict = request.json
+    nickname = json_dict.get('nickname')
+    email = json_dict.get('email')
+    password = json_dict.get('password')
+    mailcode_client = json_dict.get('mailcode')
+
+    if not all([email, nickname, password, mailcode_client]):
         return jsonify(re_code=RET.PARAMERR, msg='参数不完整')
+
+    #从Redis中获取此邮箱对应的验证码,与前端传来的数据校验
+    try:
+        mailcode_server = redis_conn.get('EMAILCODE:'+ email)
+    except Exception as e:
+        current_app.logger.debug(e)
+        return jsonify(re_code=RET.DBERR, msg='查询邮箱验证码失败')
+    if mailcode_server != mailcode_client:
+        return jsonify(re_code=RET.PARAMERR, msg='邮箱验证码错误')
+    
     user = User()
     user.email = email
     user.nickname = nickname
@@ -36,6 +49,7 @@ def signin():
 @api.route('/login', methods=['POST'])
 def login():
     '''登录
+    TODO: 添加图片验证
     :return 返回响应,保持登录状态
     '''
     email = request.values.get('email', 'default value')

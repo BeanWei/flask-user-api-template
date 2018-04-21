@@ -1,13 +1,17 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
+import redis
 from flask import Flask, request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail
 
-from config import APP_ENV, config
+from config import APP_ENV, config  
 
 db = SQLAlchemy()
+mail = Mail()
+redis_conn = None
 
 def setupLogging(level):
     '''创建日志记录'''
@@ -46,7 +50,12 @@ def creat_app():
     #             response.headers['Access-Control-Allow-Headers'] = headers
     #     return response
 
+    #创建Redis数据库连接对象
+    global redis_conn
+    redis_conn = redis.StrictRedis(host=config[APP_ENV].REDIS_HOST, port=config[APP_ENV].REDIS_PORT)
+
     db.init_app(app)
+    mail.init_app(app)
 
     #注册api_v1_0 蓝图
     from app.api_v1 import api
