@@ -1,7 +1,7 @@
 <template>
 <div id="login" >
     <Row type="flex" justify="center">
-        <img src="../assets/login.jpg" alt="" :style="bg">
+        <img src="../../assets/login.jpg" alt="" :style="bg">
         <Col span="5">
             <Card class="form">
                 <div slot="title">
@@ -22,12 +22,16 @@
                         <Button type="info" @click="handleSubmit('formInline', formInline)" long>登录</Button>
                     </FormItem>
                 </Form>
+                <div class="ft">
+                    <router-link to="/signin">没有账号？马上注册</router-link>
+                </div>
             </Card>
         </Col>
     </Row>
 </div>
 </template>
 <script>
+    import { requestLogin } from '../../api/api'
     export default {
         name: 'login',
         data () {
@@ -38,7 +42,8 @@
                 },
                 ruleInline: {
                     email: [
-                        { required: true, message: '请填写邮箱', trigger: 'blur' }
+                        { required: true, message: '请填写邮箱', trigger: 'blur' },
+                        { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
                     ],
                     password: [
                         { required: true, message: '请填写密码', trigger: 'blur' },
@@ -56,15 +61,19 @@
             handleSubmit(name, form) {
                 this.$refs[name].validate((valid) => {
                     if (valid) {
-                        this.$axios.defaults.auth = {
+                        var loginParams = {
                             email: form.email,
-                            password: form.password,
+                            password: form.password
                         }
-                        this.$axios.get('/login').then(response => {
-                            this.$Message.success("提交成功")
-                            let data = response.data
-                            this.$store.commit('set_token', data)
-                            this.$router.push('/')
+                        requestLogin(loginParams).then(response => {
+                            if (response.re_code === "0" ) {
+                                this.$Message.success("登录成功")
+                                let token = response.data.token
+                                this.$store.commit('set_token', token)
+                                this.$router.push('/')
+                            } else {
+                                this.$Message.error(response.msg)
+                            }  
                         }).catch(error => {
                             this.$Message.error(error.status)
                         })
@@ -79,7 +88,7 @@
 
 <style lang="less" scoped>
 #login {
-
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
 }
 .bg {
     position: absolute;
@@ -90,5 +99,17 @@
     p {
         font-size: 30px;
     }
+}
+.ft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+}
+.ft a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #20A0FF;
 }
 </style>

@@ -7,32 +7,41 @@ import store from './store'
 import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import {Message} from 'iview'
+
+Vue.component('Message', Message)
 
 Vue.use(iView)
 Vue.config.productionTip = false
-
-axios.defaults.baseURL = 'http://127.0.0.1:5000/api/v1.0'
-axios.defaults.auth = {
-    email: '',
-    password: '',
-}
 
 // axios.interceptors.request.use((config) => {
 //     console.log(config)
 //     return config;
 // }, (error) => {
+//     Message.error(error)
 //     return Promise.reject(error)
 // })
+
+axios.interceptors.request.use( config => {
+    if (localStorage.token) {
+        config.headers.Authorization = `token ${localStorage.token}`
+    }
+    return config
+},err => {
+    return Promise.reject(err)
+})
 
 axios.interceptors.response.use((response) => {
     return response;
 }, (error) => {
     if (error.response) {
+        console.log(error)
         switch (error.response.status) {
             case 401:
                 store.commit('del_token')
                 router.push('/login')
         }
+        Message.error('请重新登录')
     }
     return Promise.reject(error.response.data)
 })

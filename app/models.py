@@ -1,7 +1,9 @@
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, BadSignature, SignatureExpired
-from flask import jsonify, current_app
+from flask import jsonify, current_app, g, request
+from functools import wraps
+from app.utils.response_code import RET
 
 from . import db
 
@@ -40,8 +42,8 @@ class User(db.Model):
         :return 加密过的token
         '''
         s = Serializer(current_app.config['SECRET_KEY'], expires_in=expiration)
-        return s.dumps({'id': self.id})
-
+        return s.dumps({'id': self.id, 'email': self.email}).decode('utf-8')
+ 
     # 解析token，确认登录的用户身份
     @staticmethod
     def verify_user_token(token):
@@ -75,3 +77,6 @@ class User(db.Model):
         return '<User %r>' % self.nickname
 
     #TODO: 可以添加用户头像
+
+
+
