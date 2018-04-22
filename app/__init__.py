@@ -27,6 +27,22 @@ def setupLogging(level):
     #为全局添加日志记录器
     logging.getLogger().addHandler(file_log_handler)
 
+
+# def after_request(response):
+#     '''设置请求头'''
+#     # response.headers.add('Access-Control-Allow-Origin', '*')
+#     # if request.method == 'OPTIONS':
+#     #     response.headers['Access-Control-Allow-Methods'] = 'DELETE, GET, POST, PUT'
+#     #     headers = request.headers.get('Access-Control-Request-Headers')
+#     #     if headers:
+#     #         response.headers['Access-Control-Allow-Headers'] = headers
+#     # return response
+#     response.headers['Access-Control-Allow-Origin'] = '*'
+#     response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
+#     response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+#     return response
+
+
 def creat_app():
     '''
     工厂函数，创建APP实例
@@ -39,16 +55,7 @@ def creat_app():
 
     CORS(app, resources=r'/*')
 
-    # @app.after_request
-    # def after_request(response):
-    #     '''设置请求头'''
-    #     response.headers.add('Access-Control-Allow-Origin', '*')
-    #     if request.method == 'OPTIONS':
-    #         response.headers['Access-Control-Allow-Methods'] = 'DELETE, GET, POST, PUT'
-    #         headers = request.headers.get('Access-Control-Request-Headers')
-    #         if headers:
-    #             response.headers['Access-Control-Allow-Headers'] = headers
-    #     return response
+    # app.after_request(after_request)
 
     #创建Redis数据库连接对象
     global redis_conn

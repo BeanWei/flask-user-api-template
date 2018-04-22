@@ -1,3 +1,5 @@
+import base64
+
 from flask import g, current_app, jsonify, request,make_response
 from flask_httpauth import HTTPBasicAuth
 auth = HTTPBasicAuth()
@@ -51,10 +53,12 @@ def login():
     TODO: 添加图片验证
     :return 返回响应,保持登录状态
     '''
-    email = request.values.get('email', 'default value')
-    password = request.values.get('password', 'default value')
+    # email = request.values.get('email')
+    # password = request.values.get('password')
+    current_app.logger.debug(base64.b64decode(request.headers['Authorization'].split(' ')[-1]))
+    email, password = base64.b64decode(request.headers['Authorization'].split(' ')[-1]).decode().split(':')
     if not all([email, password]):
-        return jsonify(re_code=RET.PARAMERR, msg='参数错误')
+        return jsonify(re_code=RET.PARAMERR, msg='参数不完整')
     try:
         user = User.query.filter(User.email==email).first()
     except Exception as e:

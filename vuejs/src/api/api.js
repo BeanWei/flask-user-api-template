@@ -15,7 +15,7 @@ export const requestSignin = params => {
     return axios ({
         method: 'POST',
         url: `${baseURL}/signin`,
-        auth: params
+        data: params
     })
     .then(res => res.data)
 }
@@ -24,7 +24,7 @@ export const requestMailcode = params => {
     return axios ({
         method: 'POST',
         url: `${baseURL}/mailcode`,
-        auth: params
+        data: params
     })
     .then(res => res.data)
 }
