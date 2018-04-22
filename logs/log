@@ -818,3 +818,98 @@ INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:47:14] "POST /api/v1.0/login 
 INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:47:17] "POST /api/v1.0/login HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:48:31] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
 INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:48:31] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:53:48] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:53:48] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:57:19] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:57:19] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:57:21] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:59:17] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 11:59:17] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:46:32] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:46:32] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:47:12] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:47:12] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:48:37] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:48:37] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:48:40] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\config.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:56:41] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:56:41] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:58:01] "POST /api/v1.0/login HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 14:58:32] "POST /api/v1.0/login HTTP/1.1" 400 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:00:47] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:01:35] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:02:43] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:03:07] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:03:41] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:03:41] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:04:23] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:04:24] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\passport.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\app\\api_v1\\verify.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\config.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:09:21] "OPTIONS /api/v1.0/mailcode HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:09:21] "POST /api/v1.0/mailcode HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:09:45] "OPTIONS /api/v1.0/signin HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:09:45] "POST /api/v1.0/signin HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:12:11] "OPTIONS /api/v1.0/signin HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:12:11] "POST /api/v1.0/signin HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:12:56] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:12:56] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\WebProject\\MyProject\\flask-user-API-template\\config.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 163-446-745
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:16:42] "OPTIONS /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [22/Apr/2018 15:16:42] "POST /api/v1.0/login HTTP/1.1" 200 -

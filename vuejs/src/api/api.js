@@ -6,7 +6,7 @@ export const requestLogin = params => {
     return axios ({
         method: 'POST',
         url: `${baseURL}/login`,
-        auth: params
+        data: params
     })
     .then(res => res.data)
 }

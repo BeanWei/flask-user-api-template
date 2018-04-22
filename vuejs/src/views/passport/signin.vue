@@ -49,6 +49,7 @@
 
 <script>
 import { requestSignin, requestMailcode } from '../../api/api'
+import * as coreJS from '../../utils/core'
 export default {
     name: 'signin',
     data () {
@@ -117,6 +118,11 @@ export default {
         }
     }
   },
+  computed: {
+    mdpassword: function () {
+        return coreJS.encryptedPassword(this.formInline.password)
+    }
+  },
   methods: {
     handleSubmit(name, form) {
         this.$refs[name].validate((valid) => {
@@ -124,7 +130,8 @@ export default {
                 var signinParams = {
                     nickname: form.nickname,
                     email: form.email,
-                    password: form.password
+                    password: this.mdpassword,
+                    mailcode: this.formInline.mailcode
                 }
                 requestSignin(signinParams).then(response => {
                     if (response.re_code === "0" ) {

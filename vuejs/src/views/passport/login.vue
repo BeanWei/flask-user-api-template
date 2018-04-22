@@ -32,6 +32,7 @@
 </template>
 <script>
     import { requestLogin } from '../../api/api'
+    import * as coreJS from '../../utils/core'
     export default {
         name: 'login',
         data () {
@@ -57,18 +58,23 @@
                 }
             }
         },
+        computed: {
+            mdpassword: function () {
+                return coreJS.encryptedPassword(this.formInline.password)
+            }
+        },
         methods: {
             handleSubmit(name, form) {
                 this.$refs[name].validate((valid) => {
                     if (valid) {
                         var loginParams = {
                             email: form.email,
-                            password: form.password
+                            password: this.mdpassword
                         }
                         requestLogin(loginParams).then(response => {
                             if (response.re_code === "0" ) {
                                 this.$Message.success("登录成功")
-                                let token = response.data.token
+                                let token = response.token
                                 this.$store.commit('set_token', token)
                                 this.$router.push('/')
                             } else {

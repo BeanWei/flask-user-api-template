@@ -14,8 +14,8 @@ from . import api
 @api.route('/mailcode', methods=['POST'])
 def send_mail_code():
     '''发送邮箱验证码'''
-    nickname =request.values.get('nickname')
-    email =request.values.get('email')
+    nickname =request.json.get('nickname')
+    email =request.json.get('email')
     if not all([email, nickname]):
         return jsonify(re_code=RET.PARAMERR, msg='请填写完整的注册信息')
 

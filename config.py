@@ -41,12 +41,12 @@ class BaseConfig:
 class TestingConfig(BaseConfig):
     DEBUG = True
     LOGGING_LEVEL = logging.DEBUG
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://Bean:124127@localhost:3306/test"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://Bean:124127@127.0.0.1:3306/test"
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = False
     LOGGING_LEVEL = logging.WARNING
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://Bean:124127@localhost:3306/test"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://Bean:124127@127.0.0.1:3306/test"
 
 config = {
     "testing": TestingConfig,

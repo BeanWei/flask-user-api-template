@@ -16,10 +16,10 @@ def signin():
     '''用户注册接口
     :return 返回注册信息{'re_code': '0', 'msg': '注册成功'}
     '''
-    nickname =request.values.get('nickname')
-    email =request.values.get('email')
-    password =request.values.get('password')
-    mailcode_client =request.values.get('mailcode')
+    nickname =request.json.get('nickname')
+    email =request.json.get('email')
+    password =request.json.get('password')
+    mailcode_client =request.json.get('mailcode')
 
     if not all([email, nickname, password, mailcode_client]):
         return jsonify(re_code=RET.PARAMERR, msg='参数不完整')
@@ -53,10 +53,12 @@ def login():
     TODO: 添加图片验证
     :return 返回响应,保持登录状态
     '''
-    # email = request.values.get('email')
-    # password = request.values.get('password')
-    current_app.logger.debug(base64.b64decode(request.headers['Authorization'].split(' ')[-1]))
-    email, password = base64.b64decode(request.headers['Authorization'].split(' ')[-1]).decode().split(':')
+    email = request.json.get('email')
+    password = request.json.get('password')
+
+    #解析Authorization
+    #email, password = base64.b64decode(request.headers['Authorization'].split(' ')[-1]).decode().split(':')
+
     if not all([email, password]):
         return jsonify(re_code=RET.PARAMERR, msg='参数不完整')
     try:
